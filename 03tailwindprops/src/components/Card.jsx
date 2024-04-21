@@ -2,9 +2,9 @@ import React from 'react'
 
 function Card({name,btnText="signup"}) {
   return (
-    <>
-
-<div class="relative h-[400px] w-[300px] rounded-md">
+<div className="grid gap-4 m-4 grid-cols-2">
+  
+<div className="relative h-[300px] w-[250px] rounded-md my-5">
   <img
     src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
     alt="AirMax Pro"
@@ -13,7 +13,7 @@ function Card({name,btnText="signup"}) {
   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
   <div class="absolute bottom-4 left-4 text-left">
     <h1 class="text-lg font-semibold text-white">{name}</h1>
-    <p class="mt-2 text-sm text-gray-300">
+    <p class="mt-2 text-xl text-gray-300">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
       debitis?
     </p>
@@ -22,8 +22,9 @@ function Card({name,btnText="signup"}) {
     </button>
   </div>
 </div>
+</div>
 
-    </>
+
   )
 }
 
